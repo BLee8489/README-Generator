@@ -22,7 +22,22 @@ const questions = [
     {
         type: 'input',
         message: 'What is this used for?',
-        name: 'usage information',
+        name: 'usage',
+    },
+    {
+        type: 'input',
+        message: 'Please provide contribution guidelines.',
+        name: 'contribution',
+    },
+    {
+        type: 'input',
+        message: 'Give test instructions.',
+        name: 'tests',
+    },
+    {
+        type: 'input',
+        message: 'Select a license for your application.',
+        name: 'license',
     },
 ];
 
