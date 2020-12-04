@@ -21,7 +21,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is this used for?',
+        message: 'Please enter usage information.',
         name: 'usage',
     },
     {
@@ -31,14 +31,26 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Give test instructions.',
+        message: 'Please enter test instructions.',
         name: 'tests',
     },
     {
-        type: 'input',
-        message: 'Select a license for your application.',
+        type: 'list',
+        message: 'Choose a License.',
+        choices: ['MIT', 'Apache', 'GNU GPLv3'],
         name: 'license',
     },
+    {
+        type: 'input',
+        message: 'Enter your GitHub username.',
+        name: 'GitHub',
+    },
+    {
+        type: 'input',
+        message: 'Enter your email address.',
+        name: 'email',
+    },
+
 ];
 
 // function to write README file
@@ -52,10 +64,30 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
     .prompt (questions).then(answers => {
+        data.licenseImg = userChoice(data.license)
 writeToFile("README.md", generateMarkdown(answers))
 
     })
 }
+
+// function to return license image
+function userChoice(choice){
+    switch (choice) {
+        case "MIT":
+            return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        
+        case "Apache":
+            return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+
+        case "GNU GPLv3":
+            return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    
+        default:
+            break;
+    }
+    console.log(choice)
+}
+
 
 // function call to initialize program
 init();

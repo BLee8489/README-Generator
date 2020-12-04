@@ -6,6 +6,26 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
+## Installation
+${data.installation}
+
+## Usage
+${data.usageInfo}
+
+## License
+${data.licenseImg}
+
+## Contributing
+${data.contribution}
+
+## Tests
+${data.testInstructions}
+
+## Questions
+GitHub Profile Link: https://github.com/${data.github}
+Please contact me directly at: ${data.email}
+
+
 ## Table of Contents:
 
 - [Installation](#Installation)
@@ -20,18 +40,8 @@ ${data.description}
 
 - [Mock-Up](#Mock-Up)
 
-- [Questions](#Questions)
+- [Questions](#Questions)  
 
-## Installation Instructions
-${data.instructions}
-## Usage
-${data.usage}
-## Contribution Guidelines
-${data.contribution}
-## Test Instructions
-${data.tests}
-
-  
   `;
   }
   
