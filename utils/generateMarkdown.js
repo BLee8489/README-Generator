@@ -23,23 +23,24 @@ ${data.description}
 - [Questions](#Questions) 
 
 
-## Installation
-${data.installatiocsn}
+## Installation:
+${data.installation}
 
-## Usage
+## Usage:
 ${data.usage}
 
-## License
+## License:
 ${data.license}
 
-## Contributing
+## Contributing:
 ${data.contribution}
 
-## Tests
+## Tests:
 ${data.tests}
 
-## Questions
+## Questions:
 GitHub Profile Link: https://github.com/${data.github}
+
 Please contact me directly at: ${data.email}
 
 `;
