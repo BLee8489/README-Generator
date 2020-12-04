@@ -46,5 +46,6 @@ GitHub Profile Link: https://github.com/BLee8489
 
 Please contact me directly at: bonlee8489@gmail.com
 
+file:///Users/bonnielee/Desktop/README%20Generator_%2012_3_20.gif
 
 ![README Screenshot](https://user-images.githubusercontent.com/71522463/101132095-3b00d980-35bb-11eb-8e01-3c177d700f9a.png)
