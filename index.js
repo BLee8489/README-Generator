@@ -17,7 +17,7 @@ const questions = [
     {
         type: 'input',
         message: 'Please provide installation instructions.',
-        name: 'instructions',
+        name: 'installation',
     },
     {
         type: 'input',
@@ -43,7 +43,7 @@ const questions = [
     {
         type: 'input',
         message: 'Enter your GitHub username.',
-        name: 'GitHub',
+        name: 'github',
     },
     {
         type: 'input',
@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
     .prompt (questions).then(answers => {
-        data.licenseImg = userChoice(data.license)
+        // data.licenseImg = userChoice(data.license)
 writeToFile("README.md", generateMarkdown(answers))
 
     })
